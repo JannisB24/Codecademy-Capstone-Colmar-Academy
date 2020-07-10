@@ -1,0 +1,305 @@
+
+body {
+    font-family: "Open Sans";
+    box-sizing: border-box;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.padding-top {
+    padding-top: 64px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+  
+h2 {
+font-size: 2rem;
+font-weight: 800;
+}
+  
+h3 {
+font-size: 1.4rem;
+font-weight: 700;
+}
+  
+p {
+font-weight: 400;
+color: #898989;
+line-height: 1.6rem;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}  
+
+/*Header*/
+header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.left_header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.left_header .bold {
+    font-weight: 700;
+    color: #4b4b4b;
+}
+
+.left_header .light {
+    color: #9b9b9b;
+}
+
+header ul {
+    margin-right: 24px;
+    display: inline-flex;
+    list-style-type: none;
+    color: black;
+}
+
+header li {
+    padding-right: 16px;
+}
+
+header img {
+    margin-left: 24px;
+    height: 32px;
+}
+
+/*first Screen*/
+.first_screen {
+    width: 100%;
+    background-color: lightgray;
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.first_screen .pic {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.first_screen .pic img {
+    width: 100%;
+}
+
+.first_screen .content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_content {
+    width: 75%;
+}
+
+.content_content h2 {
+    margin: 10% 0;
+}
+
+.content_content button {
+    text-align: center;
+    color: white;
+    background-color: #606060;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*second Screen*/
+.second_screen {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.left_screen {
+    margin: 32px 24px;
+    width: 60%;
+}
+
+.left_screen h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.left_screen img {
+    width: 100%;
+}
+
+.right_screen {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: solid 1px lightgray;
+}
+
+.right_screen .picture {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.right_screen .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.right_screen p {
+    margin: 8px 0px;
+}
+
+.right_screen a {
+    color: #4a90e2;
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+/*third Screen*/
+.third_screen {
+    width: 100%;
+    background-color: lightgray;
+    padding-bottom: 16px;
+}
+
+.third_screen h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.six_parts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 56px;
+}
+
+.part {
+    width: 30%;
+    margin: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.part img {
+    height: auto;
+}
+
+.part .background {
+    margin: 16px 16px 24px 16px;
+}
+
+.part .course {
+    margin: 8px 0px;
+}
+
+/*fourth Screen*/
+.fourth_screen {
+    width: 100%;
+}
+
+.fourth_screen h1 {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.whole {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.whole h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.left_side {
+    margin: 0px 24px;
+    width: 60%;
+}
+
+.left_side video {
+    width: 100%;
+}
+
+.right_side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_side .picture {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.right_side .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.right_side p {
+    margin: 8px 0px;
+}
+
+/*Footer*/
+footer {
+    margin: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px lightgray;
+}
